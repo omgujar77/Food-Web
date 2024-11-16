@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Unlock&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla+Tamil+Inclined:wght@400;700&family=Noto+Serif+JP:wght@200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Rubik+Wet+Paint&family=Unlock&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Karla+Tamil+Inclined:wght@400;700&family=Noto+Serif+JP:wght@200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Rubik+Wet+Paint&family=Unlock&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Rubik+Wet+Paint&family=Unlock&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 10%;
+  z-index: 9;
+}
+/* Nav Started */
+nav {
+  justify-content: space-between !important;
+  width: 100%;
+  height: 100%;
+  padding: 3% 7%;
+  background: rgba(225, 217, 217, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(53, 53, 56, 0.37);
+  backdrop-filter: blur(3.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.left-nav {
+  gap: 40px;
+}
+#logo {
+  margin-right: 40px;
+}
+.left-nav a {
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.rght-nav {
+  gap: 40px;
+}
+.rght-nav i {
+  font-size: 30px;
+}
+.btn {
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: #233000;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  scale: 1.02;
+  background-color: transparent;
+  color: #233000;
+  border: 1px solid #233000;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.d-flex-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Part-1 Started */
+
+#part-1 {  
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f5e9;
+}
+.lft-part-1 {
+  align-items: start;
+  width: 50%;
+  height: 100%;
+  gap: 20px;
+  padding-left: 7%;
+  color: orange;
+}
+.lft-part-1 h1 {
+  margin-top: -20px;
+  font-size: 50px;
+  font-family: "Unlock", serif;
+}
+.lft-part-1 p {
+  font-size: 15px;
+  width: 80%;
+  font-family: "Playfair Display", serif;
+}
+.cta {
+  gap: 70px;
+}
+.cir {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background-color: #233000;
+  margin-left: -20px;
+  background-size: cover;
+  background-position: center;
+}
+.review .cir:nth-child(1) {
+  background-image: url(https://plus.unsplash.com/premium_photo-1722686525033-5513bebb3b93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zm9vZCUyMHBsYXRlc3xlbnwwfHwwfHx8MA%3D%3D);
+}
+.review .cir:nth-child(2) {
+  background-image: url(https://images.unsplash.com/photo-1513861810402-53342bf5bd13?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvb2QlMjBwbGF0ZXN8ZW58MHx8MHx8fDA%3D);
+}
+.review .cir:nth-child(3) {
+  background-image: url(https://images.unsplash.com/photo-1514843319620-4f042827c481?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2QlMjBwbGF0ZXN8ZW58MHx8MHx8fDA%3D);
+}
+.rght-part-1 {
+  width: 50%;
+  height: 100%;
+}
+.rght-part-1 img {
+  animation: spin 50s linear infinite;
+}
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+.overplay-glass {
+  position: absolute;
+  width: 70%;
+  height: 15%;
+  backdrop-filter: blur(4.5px);
+  background-color: rgba(169, 74, 27, 0.75);
+  border-radius: 10px;
+  bottom: 5%;
+  left: 7%;
+  justify-content: space-around;
+}
+.dish {
+  width: 30%;
+  height: 80%;
+  justify-content: space-between;
+  padding: 0px 20px;
+  border-radius: 20px;
+  border: 1px solid #233000;
+  background-color: rgb(230, 185, 101);
+  transition: all 0.3s ease;
+}
+.dish:hover {
+  scale: 1.02;
+  background-color: #fff;
+  color: #233000;
+  border: 1px solid #233000;
+}
+.dish-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+#img1 {
+  background-image: url(https://images.unsplash.com/photo-1618666185561-baed3459ff18?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2QlMjBwbGF0ZXxlbnwwfHwwfHx8MA%3D%3D);
+}
+#img2 {
+  background-image: url(https://media.istockphoto.com/id/1292637257/photo/veg-hakka-noodles-a-popular-oriental-dish-made-with-noodles-and-vegetables-served-over-a.webp?a=1&b=1&s=612x612&w=0&k=20&c=0xbbDCOhb_rLXHueLmoc0zBzmE8FR7xrDyvjflUlEQ8=);
+}
+#img3 {
+  background-image: url(https://media.istockphoto.com/id/1156631698/photo/rasgulla-sweet-food.webp?a=1&b=1&s=612x612&w=0&k=20&c=kD4trN-Hr0eDB6T7lkC20BpizFqqnmqquHz4rbFp4Sc=);
+}
+.dish-dics h2 {
+  margin-top: 5px;
+  font-size: 35px;
+  font-family: "Rubik Wet Paint", serif;
+  color: red;
+}
+.dish i {
+  padding: 10px;
+  background-color: #233000;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 25px;
+}
+/* Part-2 Started */
+
+#part-2 {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f5e9;
+}
+.lft-part-2{
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+}
+#chef{
+    position: absolute;
+    padding: 1%;
+    padding-top: 20%;
+
+
+}
+.rght-part-2{
+    color: orange;
+    width: 50%;
+    height: 100%;
+    align-items: start;
+    padding: 0 40px;
+    gap: 30px;
+}
+.rght-part-2 h1{
+    font-size: 50px;
+    font-family: "Unlock", serif;
+    padding-top: 35%;
+}
+.rght-part-2 p{
+    font-size: 15px;
+    width: 80%;
+    font-family: "Playfair Display", serif;
+}
+.dsgn{
+   padding-right: 10%;
+}
+#part-3{
+  /* justify-content: space-evenly; */
+  width: 100%;
+  height: 100%;
+  background-color: #f9f5e9;
+}
+.cardcontanair{
+  width: 40%;
+  justify-content: start;
+  height: 100%;
+  gap: 20px;
+  padding-left: 10%;
+}
+.cardimg{
+  width: 80%;
+  height: 50%;
+  background-color: aqua;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.heading{
+  width: 80%;
+  font-size: 30px;
+  font-family: "Unlock", serif;
+}
+.para{
+  width: 70%;
+  font-size: 10px;
+
+}
+.para span{
+  color: orange;
+}
+.cardcontanair button{
+  margin-top: 20px;
+  background-color: orange;
+}
+.cardcontanair button:hover{
+  margin-top: 20px;
+  border-color: orangered;
+}
+#part-4{
+  width: 100%;
+  height: 100%;
+  background-color: #f9f5e9;
+  position: relative;
+}
+#part-4 h2{
+  font-size: 55px;
+  font-weight:400 ;
+  text-align: center;
+  width: 50%;
+}
+.heading span{
+  color: orange;
+  font-family: "Unlock", serif;
+  font-weight: 500;
+}
+#part-4 img{
+  border-radius: 20px;
+  position: absolute;
+  transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#part-4 img:hover{
+  filter: blur(0px);
+  scale: 1.1;
+}
+#float1{
+  left: -5%;
+  filter: blur(1px);
+}
+#float2{
+  top: 40px;
+  right: 5%;
+  filter: blur(6px);
+}
+#float3{
+  top: 65%;
+  right: 64%;
+  filter: blur(9px);
+}
+#float4{
+  top: 60%;
+  right: 15%;
+  filter: blur(4px);
+  
+}
+#float5{
+  top: 90px;
+  right:74%;
+  filter: blur(1px);
+}
+#float6{
+  top: 40%;
+  left: 90%;
+  filter: blur(3.5px);
+}
+#float7{
+  top: 80%;
+  right: 76%%;
+}
